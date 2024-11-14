@@ -1,0 +1,443 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<style>
+    .read-more {
+    color: #fff;
+    background-color: #09414d;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .read-more:hover {
+    background-color: #072f38;
+    transform: scale(1.05);
+  }
+  
+  </style>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="hero-bg">
+        <img src="{% static 'img/pino-bg.jpg' %}"  alt="">
+      </div>
+      <div class="container text-center">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <h1 data-aos="fade-up" style="color: black;" >Welcome to <span>OhmzTech</span></h1>
+          <p data-aos="fade-up" data-aos-delay="100" style="color: black;">Your partner for innovative tech solutions.<br>
+            <a href="contact.html" style="color: #09414d;">Contact us</a>
+             OhmzTech Solutions today to elevate your digital presence.
+            <br>Let us help you unlock opportunities for future growth.<br></p>
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="services.html" class="btn-get-started" style="background-color: #09414d; color: white; border: 2px solid #09414d;">Get Started</a>
+            
+      </div>
+
+    </section><!-- /Hero Section -->
+
+  <!-- Featured Services Section -->
+<section id="featured-services" class="featured-services section light-background">
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item d-flex">
+          <div class="icon flex-shrink-0"><i class="bi bi-shield-lock"></i></div>
+          <div>
+            <h4 class="title"><a href="Netsecurity.html" class="stretched-link">Network Security</a></h4>
+            <p class="description">Offering comprehensive network security solutions to protect your digital assets from cyber threats.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End Service Item -->
+
+      <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item d-flex">
+          <div class="icon flex-shrink-0"><i class="bi bi-code-slash"></i></div>
+          <div>
+            <h4 class="title"><a href="system_development.html" class="stretched-link">System Development</a></h4>
+            <p class="description">Building robust systems tailored to your business needs, from software to cloud-based solutions.</p>
+          </div>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item d-flex">
+          <div class="icon flex-shrink-0"><i class="bi bi-cloud"></i></div>
+          <div>
+            <h4 class="title"><a href="hosting.html" class="stretched-link">Cloud Solutions</a></h4>
+            <p class="description">Providing scalable cloud solutions, ensuring seamless business operations and data accessibility.</p>
+          </div>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-item d-flex">
+          <div class="icon flex-shrink-0"><i class="bi bi-lock"></i></div>
+          <div>
+            <h4 class="title"><a href="Cyber.html" class="stretched-link">Cyber Security & Forensics</a></h4>
+            <p class="description">Expertise in preventing cyber threats, data breaches, and performing forensic analysis post-incident.</p>
+          </div>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="service-item d-flex">
+          <div class="icon flex-shrink-0"><i class="bi bi-diagram-3"></i></div>
+          <div>
+            <h4 class="title"><a href="Netsecurity.html" class="stretched-link">Networking Solutions</a></h4>
+            <p class="description">Designing, implementing, and maintaining networks to optimize your business communication and data flow.</p>
+          </div>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="service-item d-flex">
+          <div class="icon flex-shrink-0"><i class="bi bi-lightbulb"></i></div>
+          <div>
+            <h4 class="title"><a href="consulting.html" class="stretched-link">IT Consulting</a></h4>
+            <p class="description">Offering expert advice on IT strategy, network architecture, and security best practices to enhance your operations.</p>
+          </div>
+        </div>
+      </div><!-- End Service Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Featured Services Section -->
+
+
+   <!-- About Section -->
+<section id="about" class="about section">
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+        <p class="who-we-are">About Me</p>
+        <h3>Empowering Businesses with Secure and Innovative IT Solutions</h3>
+        <p class="fst-italic">
+          I am a professional Network Security Engineer with expertise in securing networks, developing systems, and providing cutting-edge IT solutions tailored to meet the specific needs of businesses and individuals.
+        </p>
+        <ul>
+          <li><i class="bi bi-check-circle"></i> <span>Specialized in Network Security, protecting your data from unauthorized access and cyber threats.</span></li>
+          <li><i class="bi bi-check-circle"></i> <span>Experienced in System Development, creating scalable, secure, and reliable IT infrastructures.</span></li>
+          <li><i class="bi bi-check-circle"></i> <span>Expert in Cybersecurity & Forensics, ensuring your systems are compliant and resilient against breaches.</span></li>
+        </ul>
+        <a href="services.html" class="read-more"><span>Our Services</span><i class="bi bi-arrow-right"></i></a>
+      </div>
+
+      <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
+       
+              <div class="col-lg-12">
+                <img src="{% static "img/cyber-security.jpg" %}" class="img-fluid" alt="Cyber Security & Forensics">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- /About Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Highlights</h2>
+        <p>Discover the powerful solutions offered by OhmzTech</p>        
+      </div>
+  
+      <div class="container">
+        <div class="row justify-content-between">
+  
+          <!-- Features Navigation -->
+          <div class="col-lg-5 d-flex align-items-center">
+            <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+                  <i class="bi bi-binoculars"></i>
+                  <div>
+                    <h4 class="d-none d-lg-block">Innovative Solutions</h4>
+                    <p>Providing cutting-edge solutions that deliver real results</p>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+                  <i class="bi bi-box-seam"></i>
+                  <div>
+                    <h4 class="d-none d-lg-block">Seamless Integration</h4>
+                    <p>Ensuring smooth and efficient integration for your systems</p>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+                  <i class="bi bi-brightness-high"></i>
+                  <div>
+                    <h4 class="d-none d-lg-block">Optimized Performance</h4>
+                    <p>Maximizing performance while reducing costs and downtime</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+  
+          <!-- Features Image Section -->
+          <div class="col-lg-6">
+            <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+              <div class="tab-pane fade active show" id="features-tab-1">
+                <img src="{% static "img/details-2.png" %}" alt="Feature 1" class="img-fluid">
+              </div>
+              <div class="tab-pane fade" id="features-tab-2">
+                <img src="{% static "img/website111.png" %}" alt="Feature 2" class="img-fluid">
+              </div>
+              <div class="tab-pane fade" id="features-tab-3">
+                <img src="{% static "img/details-3.png" %}" alt="Feature 3" class="img-fluid">
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+  
+    </section><!-- End Features Section -->
+  
+    <!-- Features Details Section -->
+    <section id="features-details" class="features-details section">
+      <div class="container">
+        <div class="row gy-4 justify-content-between features-item">
+  
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <img src="{% static "img/strategic.png" %}" class="img-fluid" alt="Feature Details 1">
+          </div>
+  
+          <div class="col-lg-5 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h3>Comprehensive Strategies</h3>
+              <p>Delivering complete solutions that cater to all your technical needs and drive business growth.</p>
+              <a href="consulting.html" class="btn more-btn">Learn More</a>
+            </div>
+          </div>
+  
+        </div>
+  
+        <div class="row gy-4 justify-content-between features-item">
+  
+          <div class="col-lg-5 d-flex align-items-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+            <div class="content">
+              <h3>Expert Consultation</h3>
+              <p>Our expert team is always ready to offer tailored solutions for your business challenges.</p>
+              <ul>
+                <li><i class="bi bi-easel"></i> Custom Software Development</li>
+                <li><i class="bi bi-patch-check"></i> Data Analytics and Reporting</li>
+                <li><i class="bi bi-brightness-high"></i> Cloud Infrastructure Management</li>
+              </ul>
+              <a href="system_development.html" class="btn more-btn">Learn More</a>
+            </div>
+          </div>
+  
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
+            <img src="{% static "img/consulting.jfif" %}" class="img-fluid" alt="Feature Details 2">
+          </div>
+  
+        </div>
+      </div>
+    </section><!-- End Features Details Section -->
+  
+  <!-- Services Section -->
+<section id="services" class="services section light-background">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Our Services Overview</h2>
+    <p>Discover the wide range of services we offer to help you achieve success</p>
+  </div>
+
+  <div class="container">
+    <div class="row g-5">
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item item-cyan position-relative">
+          <i class="bi bi-activity icon"></i>
+          <div>
+            <h3>Custom Development</h3>
+            <p>We build bespoke software solutions designed to meet your unique business needs.</p>
+            <a href="system_development.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item item-orange position-relative">
+          <i class="bi bi-broadcast icon"></i>
+          <div>
+            <h3>Network Solutions</h3>
+            <p>Optimize and secure your network infrastructure with our advanced network solutions.</p>
+            <a href="Netsecurity.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item item-teal position-relative">
+          <i class="bi bi-easel icon"></i>
+          <div>
+            <h3>Cloud Services</h3>
+            <p>We offer scalable and secure cloud solutions that enable your business to grow efficiently.</p>
+            <a href="hosting.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-item item-red position-relative">
+          <i class="bi bi-bounding-box-circles icon"></i>
+          <div>
+            <h3>IT Consulting</h3>
+            <p>Our expert team provides strategic IT consulting to help you navigate the technological landscape.</p>
+            <a href="consulting.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="service-item item-purple position-relative">
+          <i class="bi bi-shield-lock icon"></i>
+          <div>
+            <h3>Cybersecurity Services</h3>
+            <p>Protect your business from cyber threats with our comprehensive cybersecurity solutions.</p>
+            <a href="Cyber.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="service-item item-blue position-relative">
+          <i class="bi bi-file-earmark-lock icon"></i>
+          <div>
+            <h3>Cyber Forensics</h3>
+            <p>Our cyber forensics experts analyze incidents and recover critical information for legal purposes.</p>
+            <a href="Cyber.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="700">
+        <div class="service-item item-green position-relative">
+          <i class="bi bi-lock-fill icon"></i>
+          <div>
+            <h3>Networking Security</h3>
+            <p>Ensure the integrity and confidentiality of your data with our robust networking security solutions.</p>
+            <a href="Netsecurity.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="800">
+        <div class="service-item item-orange position-relative">
+          <i class="bi bi-phone icon"></i>
+          <div>
+            <h3>Android Application Development</h3>
+            <p>We create user-friendly and innovative Android applications tailored to your business needs.</p>
+            <a href="system_development.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section><!-- End Services Section -->
+
+
+
+
+
+  <footer id="footer" class="footer position-relative light-background custom-footer">
+
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-4 col-md-6 footer-about">
+        <!-- <a href="#" class="logo d-flex align-items-center"> -->
+          <span class="sitename" style="color: white";>OhmzTech Solution</span>
+        </a>
+        <div class="footer-contact pt-3">
+          <p> Providing innovative technology solutions to empower businesses.</p>
+          <p class="mt-3"><strong>Phone:</strong> <span>+255 658 900 066 /+255 733 352 246</span></p>
+         
+          <p><strong>Email:</strong> <span>ohmztechsolution@gmail.com</span></p>
+        </div>
+      
+      </div>
+
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="Netsecurity.html">Network Security</a></li>
+          <li><a href="system_development.html">System Development</a></li>
+          <li><a href="Cyber.html">Cyber Security Solution</a></li>
+          <li><a href="hosting.html">Cloud Solution</a></li>
+          <li><a href="consulting.html">IT Consulting</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4 col-md-12 footer-newsletter">
+        <h4>Connect With Us on Social Media</h4>
+         <div class="social-links d-flex mt-4">
+          <a href="https://www.instagram.com/ohmztech_solution?igsh=MTJldjNxc3h5dTd5Yw=="><i class="bi bi-twitter"></i></a>
+          <a href="https://www.instagram.com/ohmztech_solution?igsh=MTJldjNxc3h5dTd5Yw=="><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/ohmztech_solution?igsh=MTJldjNxc3h5dTd5Yw=="><i class="bi bi-instagram"></i></a>
+          <a href="https://www.instagram.com/ohmztech_solution?igsh=MTJldjNxc3h5dTd5Yw=="><i class="bi bi-linkedin"></i></a
+        </div>
+      </div>
+
+    </div> 
+  </div>
+
+  <div class="container copyright text-center mt-4">
+    <p>© <span>Copyright</span> <strong class="px-1 sitename">OhmzTech Solution.</strong> All Rights Reserved</p>
+  </div>
+
+</footer>
+
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Preloader -->
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+<!-- Main JS File -->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+{% endblock content %}
