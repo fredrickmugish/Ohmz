@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="hero-bg">
+        <img src="assets/img/pino-bg.jpg" alt="">
+      </div>
+      <div class="container text-center">
+        <div class="container text-center">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <h1 data-aos="fade-up">Get in Touch with <span>OhmzTech Solution</span></h1>
+            </div>
+            
+      </div>
+
+    </section><!-- /Hero Section -->
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Contact Us</h2>
+      <p>We’re here to help! Reach out for any inquiries or assistance.</p>
+    </div><!-- End Section Title -->
+  
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+  
+      <div class="row gy-4">
+  
+        <div class="col-lg-6">
+          <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+            <i class="bi bi-geo-alt"></i>
+            <h3>Address</h3>
+            <p>P.O.BOX 169, Dodoma, Tanzania</p>
+          </div>
+        </div><!-- End Info Item -->
+  
+        <div class="col-lg-3 col-md-6">
+          <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+            <i class="bi bi-telephone"></i>
+            <h3>Call Us</h3>
+            <p>+255 658 900 066</p>
+          </div>
+        </div><!-- End Info Item -->
+  
+        <div class="col-lg-3 col-md-6">
+          <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+            <i class="bi bi-envelope"></i>
+            <h3>Email Us</h3>
+            <p>info@ohmztech.co.tz</p>
+          </div>
+        </div><!-- End Info Item -->
+  
+      </div>
+  
+      <div class="row gy-4 mt-1">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1225763.6542773953!2d35.72336454513019!3d-6.785512953571236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185aaeb47d812f47%3A0x823cbdc0779fda25!2sDodoma%2C%20Tanzania!5e0!3m2!1sen!2sus!4v1696445740931!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div><!-- End Google Maps -->
+  
+
+
+        <div class="col-lg-6">
+
+            {% if messages %}
+  <div class="messages">
+    {% for message in messages %}
+      <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}">
+        {{ message }}
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
+
+            <form action="{% url 'contact_data' %}" method="post">
+                {% csrf_token %}
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                  </div>
+                  <div class="col-md-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                  </div>
+                  <div class="col-md-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <button type="submit">Send Message</button>
+                  </div>
+                </div>
+              </form>
+              
+              
+        </div><!-- End Contact Form -->
+  
+      </div>
+  
+    </div>
+  
+  </section><!-- /Contact Section -->
+  
+ 
+  {% endblock content %}

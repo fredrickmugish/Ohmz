@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+   <!-- Hero Section -->
+   <section id="hero" class="hero section" style="background-color: #388DA8;">
+    <div class="hero-bg">
+        <img src="assets/img/hero-bg-light.jpg" alt="">
+    </div>
+    <div class="container text-center">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <h1 data-aos="fade-up" style="color: black";>Empower Your Business with <span>OhmzTech Services</span></h1>
+            <p data-aos="fade-up" data-aos-delay="100">Tailored technology services designed to secure, streamline, and accelerate your digital transformation.</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services section bg-light">
+    <div class="container">
+      <div class="section-title text-center" data-aos="fade-up">
+        <h2>Our Services</h2>
+        <p>We offer a wide range of IT services to meet all your business needs.</p>
+      </div>
+      <div class="row gy-4">
+        <!-- Network Security -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+          <div class="service-box">
+            <i class="bi bi-shield-lock service-icon"></i>
+            <h4>Network Security</h4>
+            <p>Protect your infrastructure with proactive threat detection, real-time monitoring, and secure remote access solutions.</p>
+            <a href="Netsecurity.html" class="read-more">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Cybersecurity -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-box">
+            <i class="bi bi-shield service-icon"></i>
+            <h4>Cybersecurity Solutions</h4>
+            <p>Safeguard your business with comprehensive cybersecurity solutions tailored to meet industry standards.</p>
+            <a href="Cyber.html" class="read-more">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Web Hosting -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-box">
+            <i class="bi bi-cloud service-icon"></i>
+            <h4>Web Hosting</h4>
+            <p>Reliable and scalable hosting solutions to ensure your website is secure, fast, and always accessible.</p>
+            <a href="hosting.html" class="read-more">Learn More</a>
+          </div>
+        </div>
+
+        <!-- System Development -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-box">
+            <i class="bi bi-code service-icon"></i>
+            <h4>System Development</h4>
+            <p>Custom system development to streamline your business processes, enhance productivity, and improve user experience.</p>
+            <a href="system_development.html" class="read-more">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Domain Registration -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-box">
+            <i class="bi bi-globe service-icon"></i>
+            <h4>Domain Registration</h4>
+            <p>Secure your online presence with reliable domain registration services that include DNS management and SSL certificates.</p>
+            <a href="domain_reg.html" class="read-more">Learn More</a>
+          </div>
+        </div>
+
+
+        <!-- OhmzTech Graphics Design -->
+<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+  <div class="service-box">
+    <i class="bi bi-palette service-icon"></i>
+    <h4>Graphics Design</h4>
+    <p>Creative and professional graphics design services to bring your ideas to life and elevate your brand's visual identity.</p>
+    <a href="grphics_design.html" class="read-more">Learn More</a>
+  </div>
+</div>
+
+
+        <!-- IT Consulting -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-box">
+            <i class="bi bi-lightbulb service-icon"></i>
+            <h4>IT Consulting</h4>
+            <p>Expert guidance on IT strategy, infrastructure optimization, and digital transformation to help your business grow.</p>
+            <a href="consulting.html" class="read-more">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features section">
+    <div class="container">
+      <div class="section-title text-center" data-aos="fade-up">
+        <h2>Why Choose OhmzTech?</h2>
+        <p>We provide tailored solutions, a customer-centric approach, and a team of certified experts to meet all your IT needs.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <!-- Feature 1 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-box">
+            <i class="bi bi-award feature-icon"></i>
+            <h4>Top-Tier Security Standards</h4>
+            <p>We uphold the highest standards in network and cybersecurity, providing peace of mind with proactive protection.</p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-box">
+            <i class="bi bi-person-badge feature-icon"></i>
+            <h4>Certified Experts</h4>
+            <p>Our certified professionals ensure that your IT systems are secure, optimized, and compliant with industry regulations.</p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-box">
+            <i class="bi bi-people feature-icon"></i>
+            <h4>Customer-Centric Approach</h4>
+            <p>We work closely with you to understand your unique challenges and deliver solutions that align with your business goals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  {% endblock content %}

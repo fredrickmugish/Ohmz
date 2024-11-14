@@ -1,0 +1,179 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <!-- Hero Section -->
+    <section id="hero" class="hero section" style="background-color: #388DA8;">
+        <div class="hero-bg">
+            <img src="assets/img/hero-bg-light.jpg" alt="">
+        </div>
+        <div class="container text-center">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <h1 data-aos="fade-up" style="color: black";>OhmzTech <span>Domain Registration Services</span></h1>
+                <p data-aos="fade-up" data-aos-delay="100">Secure your online presence with reliable domain registration.</p>
+            </div>
+        </div>
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-2 about-images" data-aos="fade-up" data-aos-delay="200">
+                    <div class="row gy-4">
+                        <div class="col-lg-12">
+                            <img src="assets/img/domain.jpg" class="img-fluid" alt="" style="height:120px">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 content" data-aos="fade-up" data-aos-delay="100">
+                    <p class="who-we-are">Your Trusted Domain Partner</p>
+                    <h3></h3>
+                    <p>
+                        Welcome to OhmzTech, your trusted partner for domain registration services. We offer a variety of domain extensions to help you establish your online identity effortlessly. Our user-friendly platform makes it easy to find, register, and manage your domain names.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section><!-- /About Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Our Domain Registration Services</h2>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-6 d-flex flex-column align-items-center">
+                    <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="200">
+                        <li class="nav-item">
+                            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+                                <i class="bi bi-check-circle"></i>
+                                <div>
+                                    <h4 class="d-none d-lg-block">Easy Registration</h4>
+                                    <p>
+                                        Register your domain name with just a few clicks, ensuring a hassle-free experience.
+                                    </p></br>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+                                <i class="bi bi-shield-lock"></i>
+                                <div>
+                                    <h4 class="d-none d-lg-block">Domain Privacy</h4>
+                                    <p>
+                                        Keep your personal information safe with our domain privacy protection services.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul><!-- End Tab Nav -->
+                </div>
+                <div class="col-lg-6 d-flex flex-column align-items-center">
+                    <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="200">
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+                                <i class="bi bi-clock"></i>
+                                <div>
+                                    <h4 class="d-none d-lg-block">24/7 Support</h4>
+                                    <p>
+                                        Our dedicated support team is available around the clock to assist you with any domain-related inquiries.
+                                    </p></br>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
+                                <i class="bi bi-archive"></i>
+                                <div>
+                                    <h4 class="d-none d-lg-block">Domain Management</h4>
+                                    <p>
+                                        Easily manage your domain settings, including DNS records and renewal options, all in one place.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul><!-- End Tab Nav -->
+                </div>
+            </div>
+        </div>
+    </section><!-- /Features Section -->
+
+    <!-- Why Choose Us Section -->
+    <section id="features-details" class="features-details section">
+        <div class="container">
+            <div class="row gy-4 justify-content-between features-item">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/img/chooose.webp" class="img-fluid" alt="" style="height:400px">
+                </div>
+                <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="content">
+                        <h3>Why Choose OhmzTech for Domain Registration?</h3>
+                        <p>
+                        <ul>
+                            <li><i class="bi bi-check"></i> <span><strong>Expertise:</strong> A team with years of experience in domain management and IT solutions.</span></li>
+                            <li><i class="bi bi-check"></i> <span><strong>Affordability:</strong> Competitive pricing on all domain registrations.</span></li>
+                            <li><i class="bi bi-check"></i> <span><strong>Reliability:</strong> Trustworthy services with guaranteed uptime.</span></li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- /Why Choose Us Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Contact Us</h2>
+                <p>For more information on our domain registration services, please reach out.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="text-center"><button type="submit">Send Message</button></div>
+                    </form>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="info">
+                        <div class="address">
+                            <i class="bi bi-geo-alt"></i>
+                            <h4>Location:</h4>
+                            <p>P.O.BOX 169, Dodoma, Tanzania</p>
+                        </div>
+                        <div class="email">
+                            <i class="bi bi-envelope"></i>
+                            <h4>Email:</h4>
+                            <p>ohmztechsolution@gmail.com</p>
+                        </div>
+                        <div class="phone">
+                            <i class="bi bi-phone"></i>
+                            <h4>Call:</h4>
+                            <p>+255 658 900 066</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- /Contact Section -->
+    {% endblock content %}
+
+  

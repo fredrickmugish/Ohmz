@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section" style="background-color: #388DA8;">
+        <div class="hero-bg">
+            <img src="{% static "img/hero-bg-light.jpg" %}" alt="">
+        </div>
+        <div class="container text-center">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <h1 data-aos="fade-up" style="color: black;"> Learn More About <span>OhmzTech Solution</span></h1>
+            </div>
+        </div>
+    </section><!-- /Hero Section -->
+	    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container">
+
+        <div class="row gy-4">
+<div class="col-lg-2">
+
+            <div class="tab-content" data-aos="fade-up" data-aos-delay="100">
+
+              <div class="tab-pane fade active show" id="features-tab-1">
+                <img src="{% static "img/organizations1.png" %}" class="img-fluid" alt="" style="height:120px" >
+              </div><!-- End Tab Content Item -->
+            </div>
+
+          </div>
+          <div class="col-lg-10 content" data-aos="fade-up" data-aos-delay="100">
+		  
+            <p class="who-we-are">Who We Are</p>
+         <h3>Innovative IT Solutions Driven by Expertise</h3>
+         <p>OhmzTech specializes in delivering expert IT services designed to meet the needs of modern businesses. With a focus on cloud infrastructure management, we offer comprehensive solutions across multi-cloud platforms such as AWS, Microsoft Azure, and Google Cloud. Our certified experts ensure seamless transitions to cloud environments, optimizing infrastructure and reducing operational costs.</p>
+            <p>We also excel in advanced AI and machine learning services, providing data annotation, model development, and AI integration solutions. Our team partners with organizations to enhance their machine learning capabilities, driving innovation and digital transformation. From Cloud Engineering to AI development, we deliver tailored services to empower businesses with cutting-edge technology.</p>
+             <p>Our mission is to support businesses in navigating the complexities of today’s tech landscape, offering services that enhance scalability, security, and efficiency. Partner with OhmzTech to unlock the full potential of your digital infrastructure.</p>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- /About Section -->
+	    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Overview</h2>
+        <p>At OhmzTech Solutions, we are dedicated to delivering innovative technology services tailored to meet the evolving needs of businesses in today’s digital landscape.</p>
+        </div><!-- End Section Title -->
+        
+        <div class="container">
+          <div class="row justify-content-between">
+        
+            <div class="col-lg-12 d-flex flex-column align-items-center">
+        
+              <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="200">
+                <li class="nav-item">
+                  <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+                    <i class="bi bi-journal-bookmark"></i>
+                    <div>
+                      <h4 class="d-none d-lg-block">Service Overview</h4>
+                      <p>
+                        Our services are meticulously crafted to empower businesses in areas such as Network Security Engineering, System Development, and Cloud Solutions. We ensure robust security frameworks, efficient system architectures, and scalable cloud infrastructures, allowing organizations to thrive in a competitive landscape.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+                    <i class="bi bi-graph-up"></i>
+                    <div>
+                      <h4 class="d-none d-lg-block">Market Demand</h4>
+                      <p>
+                        The demand for Cybersecurity and Cloud Solutions has surged dramatically in response to increasing cyber threats and the digital transformation of businesses. OhmzTech helps organizations protect their assets while maximizing the potential of cloud technologies to enhance operational efficiency.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+                    <i class="bi bi-lightbulb"></i>
+                    <div>
+                      <h4 class="d-none d-lg-block">Embracing Innovation</h4>
+                      <p>
+                        Recognizing the critical role of Cyber Forensics** in identifying and mitigating threats, OhmzTech stays at the forefront of technological advancements. Our team is skilled in implementing advanced cybersecurity measures and forensic methodologies that safeguard businesses against emerging threats.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
+                    <i class="bi bi-people"></i>
+                    <div>
+                      <h4 class="d-none d-lg-block">Partnerships</h4>
+                      <p>
+                        OhmzTech collaborates with industry leaders and cybersecurity firms to deliver comprehensive solutions that address specific business challenges. Our strategic partnerships enable us to offer state-of-the-art security technologies and resources, ensuring our clients remain resilient against cyber threats.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-5">
+                    <i class="bi bi-bar-chart"></i>
+                    <div>
+                      <h4 class="d-none d-lg-block">Impact</h4>
+                      <p>
+                        Our success is defined by the tangible impact we create for our clients. By empowering businesses with top-tier Network Security, System Development, and Cloud Solutions, we help them achieve enhanced security, improved efficiency, and sustainable growth in their operations.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              </ul><!-- End Tab Nav -->
+        
+            </div>
+        
+          </div>
+        
+        </div>
+        
+        </section><!-- /Features Section -->
+        
+ 
+  {% endblock content %}
